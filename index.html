@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Anniversaire</h1>
+    </header>
+    <div class="hb">
+        <div class="bonhb">
+            <h1>Bon Anniversaire !</h1>
+            <div class="text">
+                <p>Chère maman, nous te souhaitons d'avoir le plus heureux des anniversaires !<br><br>
+                    <span id="meilleur">(Mais surtout de ton enfant préféré qui est aussi le plus intelligent, le plus
+                        beau
+                        et
+                        le plus drôle).</span>
+                </p>
+            </div>
+        </div>
+        <div id="parent">
+            <div id="pente" class="pente">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div id="parent2">
+            <div id="pentebl" class="pente"></div>
+        </div>
+        <div class="arrow">
+            <img src="images/arrow.svg" alt="">
+            <img src="images/arrow.svg" alt="">
+        </div>
+        <div class="maeva"></div>
+        <div class="famille"></div>
+        <h1 class="choix">Fait ton choix</h1>
+        <div id="box1" class="box">
+            <div id="inf"></div>
+            <div id="ficelle"></div>
+            <li id="bvup"></li>
+            <li id="bvr"></li>
+            <li id="bvdw"></li>
+            <li id="bvl"></li>
+            <div class="content">
+                <li id="up"></li>
+                <li id="r"></li>
+                <li id="dw"></li>
+                <li id="l"></li>
+            </div>
+            <a href="kado.html">Plus d'infos</a>
+        </div>
+        <div id="box2" class="box">
+            <div id="inf" style="display: none;"></div>
+            <div id="ficelle" style="display: none;"></div>
+            <li id="bvup" style="display: none;"></li>
+            <li id="bvr" style="display: none;"></li>
+            <li id="bvdw" style="display: none;"></li>
+            <li id="bvl" style="display: none;"></li>
+            <div class="content">
+                <li id="up"></li>
+                <li id="r"></li>
+                <li id="dw"></li>
+                <li id="l"></li>
+            </div>
+            <a href="kado.html">Plus d'infos</a>
+        </div>
+        <div id="box3" class="box">
+            <div id="inf"></div>
+            <div id="ficelle"></div>
+            <li id="bvup"></li>
+            <li id="bvr"></li>
+            <li id="bvdw"></li>
+            <li id="bvl"></li>
+            <div class="content">
+                <li id="up"></li>
+                <li id="r"></li>
+                <li id="dw"></li>
+                <li id="l"></li>
+            </div>
+            <a href="kado.html">Plus d'infos</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        let parent = document.getElementById('parent');
+        let parent2 = document.getElementById('parent2');
+        let container = document.getElementById('container');
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            parent.style.bottom = value * 0.4 + 'px';
+            parent2.style.top = -150 + value * -0.06 + 'px';
+            container.style.top = value * -0.52 + 'px';
+        });
+    </script>
+
+</body>
+
+</html>
