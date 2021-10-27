@@ -6,12 +6,13 @@
 }
 header {
   position: fixed;
-  background: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.505), rgba(0, 0, 0, 0.505));
   width: 100%;
   z-index: 1000;
 }
 h1,
 h2,
+h3,
 p,
 a {
   font-family: "Nunito Sans", sans-serif;
@@ -189,4 +190,55 @@ body {
   text-decoration: none;
   font-weight: 700;
   margin-top: 5px;
+}
+
+.null {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+.salle {
+  height: 1200px;
+  width: 100%;
+  position: relative;
+  background: url("images/les-grands-buffets_salle_mobile.jpg") no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid white;
+}
+.salle h3 {
+  position: absolute;
+  margin-top: 10px;
+  left: 40%;
+  font-size: 50px;
+  color: #fff;
+  padding: 5px;
+  text-shadow: 0 4px 10px rgb(34, 34, 34);
+}
+.mange {
+  height: 1200px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.mange h3 {
+  position: absolute;
+  margin-top: 10px;
+  left: 36%;
+  font-size: 50px;
+  color: #fff;
+  padding: 5px;
+  text-shadow: 0 4px 10px rgb(34, 34, 34);
+}
+.mange .img {
+  width: 300px;
+  height: 300px;
+  margin: 140px;
+  box-shadow: 0 4px 10px black;
+}
+.mange .img img {
+  width: 300px;
+  height: 300px;
 }
