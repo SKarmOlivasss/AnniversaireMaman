@@ -220,7 +220,7 @@ body {
 }
 .salle h3 {
   position: absolute;
-  margin-top: 10px;
+  margin-top: 80px;
   left: 40%;
   font-size: 50px;
   color: #fff;
@@ -238,7 +238,7 @@ body {
 }
 .mange h3 {
   position: absolute;
-  margin-top: 10px;
+  margin-top: 80px;
   left: 36%;
   font-size: 50px;
   color: #fff;
